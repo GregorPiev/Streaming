@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Streaming Video</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style-streaming.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="main-wrapper">
+            <blockquote>
+                <p>
+                    <input type="text" id="url-test" value="/Streaming/video/frag_bunny.mp4">
+                </p>
+            </blockquote>
+
+            <div class="video-wrapper">
+                <div class="video-side-spaces"></div>
+                <div id="video-container" class="video-container"></div>
+                <div class="video-side-spaces"></div>
+            </div>
+
+        </div>
+        <script>
+            configValues = {
+                "url": document.getElementById('url-test').value,
+                "wrapperID": "video-container",
+                "posterRoot": "images/poster.png",
+                "mimeCode": 'video/mp4; codecs="avc1.64001e, mp4a.40.2"'
+            };
+        </script>
+        <script src='js/streaming-mse.js?v='+(Math.floor(Math.random() * 10 + 1))+''></script>
+        <script>
+
+        </script>
+    </body>
+</html>
